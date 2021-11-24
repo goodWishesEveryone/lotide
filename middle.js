@@ -45,18 +45,18 @@ const middle = function(array) {
 
 
 // TEST CODEs
-//For arrays with one or two elements, there is no middle; return an empty array.
+// For arrays with one or two elements, there is no middle; return an empty array.
 console.log(middle([1]));
 console.log(middle([1, 2]));
-//For arrays with odd number of elements, an array containing a single middle element should be returned.
+// For arrays with odd number of elements, an array containing a single middle element should be returned.
 console.log(middle([1, 2, 3]));
 console.log(middle([1, 2, 3, 4, 5]));
-//or arrays with an even number of elements, an array containing the two elements in the middle should be returned
+// For arrays with an even number of elements, an array containing the two elements in the middle should be returned
 console.log(middle([1, 2, 3, 4]));
 console.log(middle([1, 2, 3, 4, 5, 6]));
 
 
-// Test Assertions
+// TEST ASSERTIONs
 
 assertArraysEqual(middle([]), []);                    // => true thus PASS
 assertArraysEqual(middle([1]), []);                   // => true thus PASS
