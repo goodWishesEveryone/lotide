@@ -1,7 +1,8 @@
 // This function takes in a string and returns an object where each unique character encountered in the string is a property of the object and the value for that property/key should be the number of occurrences for that character.  Spaces are skipped and not counted.
 
 const assertEqual = function(actual, expected) {
-  return actual === expected ? `🙌  Assertion Passed: ${actual} === ${expected}` : `🙏  Assertion Failed: ${actual} !== ${expected}`;
+  return actual === expected ? `🙌  Assertion Passed: ${actual} === ${expected}`
+    : `🙏  Assertion Failed: ${actual} !== ${expected}`;
 };
 
 
