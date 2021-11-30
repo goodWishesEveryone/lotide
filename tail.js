@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+// const assertEqual = require('./assertEqual');
 
 // This function returns the "tail" of an array: everything except for the first item (head) of the provided array. This tail function should be returning a new array and not modify the original array that is passed in.
 
