@@ -16,12 +16,10 @@ const findKeyByValue = function(object, value) {
 };
 
 
-
-
 const map = {"first" : "1", "second" : "2"};
 console.log(findKeyByValue(map,"2"));
 // If no key with that given value is found, then it should return undefined.
-console.log(findKeyByValue(map,"3"));
+console.log(findKeyByValue(map,"3"));  
 
 
 console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
