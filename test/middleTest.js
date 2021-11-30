@@ -1,32 +1,34 @@
+const assert = require('chai').assert;
 const middle = require('../middle');
-const assertArraysEqual = require('../assertArraysEqual');
+
+describe("#middle", () => {
+  it("returns [] for [], an empty array", () => {
+    assert.deepEqual(middle([]), []);
+  });
+  it("returns [] for [1]; For arrays with one or two elements, there is no middle", () => {
+    assert.deepEqual(middle([1]), []);
+  });
+  it("returns [] for [1,2]; For arrays with one or two elements, there is no middle", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
+  it("returns [1,2,3] for [2]; For arrays (NUMBER) with odd number of elements ", () => {
+    assert.deepEqual(middle([1,2,3]), [2]);
+  });
+  it("returns [3] for [1, 2, 3, 4, 5]; for arrays (NUMBER) with odd number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]);
+  });
+  it("returns [2, 3] for [1, 2, 3, 4]; for arrays (NUMBER) with an even number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
+  it("returns [3,4] for [1, 2, 3, 4, 5, 6]; for arrays (NUMBER) with an even number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3,4]);
+  });
 
 
-
-// TEST CODEs
-console.log('------  TEST middle function  ------');
-// For arrays with one or two elements, there is no middle; return an empty array.
-console.log(middle([1]));
-console.log(middle([1, 2]));
-// For arrays with odd number of elements, an array containing a single middle element should be returned.
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4, 5]));
-// For arrays with an even number of elements, an array containing the two elements in the middle should be returned
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5, 6]));
-
-
-// TEST ASSERTIONs
-console.log('------  TEST middle function with assertArraysEqual : PASS  ------');
-assertArraysEqual(middle([]), []);                    // => true thus PASS
-assertArraysEqual(middle([1]), []);                   // => true thus PASS
-assertArraysEqual(middle([1, 2, 3]), [2]);            // => true thus PASS
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);      // => true thus PASS
-assertArraysEqual(middle([1, 2, 3, 4]), [2,3]);       // => true thus PASS
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3,4]); // => true thus PASS
-assertArraysEqual(middle(['Light', 'House', 'Labs']),['House']); // => true thus PASS
-assertArraysEqual(middle(['Light', 'House', 'Labs','Inc']),['House', 'Labs']); // => true thus PASS
-
-console.log('------  TEST middle function with assertArraysEqual : FAIL  ------');
-assertArraysEqual(middle(['Light', 'House', 'Labs']),['Labs']); // => false thus FAIL
-assertArraysEqual(middle(['Light', 'House', 'Labs', 'Inc']),['Labs']); // => false thus FAIL
+  it("returns [House] for ['Light', 'House', 'Labs']; for arrays (STRING) with odd number of elements", () => {
+    assert.deepEqual(middle(['Light', 'House', 'Labs']),['House']);
+  });
+  it("returns ['House', 'Labs'] for ['Light', 'House', 'Labs','Inc']; for arrays (STRING) with an even number of elements", () => {
+    assert.deepEqual(middle(['Light', 'House', 'Labs','Inc']),['House', 'Labs']);
+  });
+});
