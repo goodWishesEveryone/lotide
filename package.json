@@ -8,10 +8,11 @@
   },
   "scripts": {
     "test": "mocha"
+
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:goodWishesEveryone/lotide.git"
+    "url": "git+https://github.com/goodWishesEveryone/lotide.git"
   },
   "author": "Stella Maris Cano",
   "license": "ISC",
