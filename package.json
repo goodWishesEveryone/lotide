@@ -1,5 +1,5 @@
 {
-  "name": "@stellamaris/lotide",
+  "name": "@stellamaris/stellamaris-lotide",
   "version": "1.0.0",
   "description": "Lighthouse Labs lotide package",
   "main": "index.js",
