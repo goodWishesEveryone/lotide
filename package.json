@@ -1,0 +1,22 @@
+{
+  "name": "@stellamaris/lotide",
+  "version": "1.0.0",
+  "description": "Lighthouse Labs lotide package",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodWishesEveryone/lotide.git"
+  },
+  "author": "Stella Maris Cano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodWishesEveryone/lotide/issues"
+  },
+  "homepage": "https://github.com/goodWishesEveryone/lotide#readme"
+}
