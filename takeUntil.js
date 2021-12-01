@@ -1,3 +1,5 @@
+// takeUntil will keep collecting items from a provided array until the callback provided returns a truthy value.
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;

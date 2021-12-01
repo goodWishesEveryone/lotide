@@ -1,8 +1,4 @@
-// Our map function will take in two arguments: an array to map and a callback function.
-// The map function will return a new array based on the results of the callback function.
-
-//Add a collection of words to your empty map.js file:
-
+// Map function will take in two arguments: an array to map and a callback function; and will return a new array based on the results of the callback function.
 
 const words = ["ground", "control", "to", "major", "tom"];
 
